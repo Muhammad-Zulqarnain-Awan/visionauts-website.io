@@ -1,0 +1,419 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+/* *****************************
+*******topbar****************
+***************************** */
+
+.topbar {
+    width: 100vw;
+    height: 4vh;
+    background-color: #585656;
+    position: relative;
+}
+
+.topbar .col {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 12px;
+}
+
+.topbar .col .text,
+.topbar-right {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 9px;
+}
+
+.topbar .col .text {
+    padding: 0 15px;
+    border-left: 1px solid #fff;
+    border-right: 1px solid #fff;
+    color: #fff;
+}
+
+.topbar .col .text p {
+    font-size: 11px;
+    font-weight: bold;
+    padding: 10px;
+    color: #fff;
+}
+
+.topbar .col .text i {
+    padding: 0 10px;
+    font-size: 16px;
+    font-weight: 800;
+}
+
+
+/* *****************************
+*******header****************
+***************************** */
+header {
+    width: 100vw;
+    height: 9vh;
+    position: relative;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 40px;
+    background-color: #fff;
+    width: 100vw;
+    height: 9vh;
+    position: relative;
+    z-index: 1000;
+    box-shadow: 0 0 5px black;
+}
+
+.navbar .logo {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 50%;
+}
+
+.navbar .logo img {
+    width: 100px;
+}
+
+.navbar .logo span {
+    padding: 0 15px;
+    font-size: 24px;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    width: min-content;
+    cursor: pointer;
+    color: black;
+}
+
+.navbar .group {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 50%;
+}
+
+.navbar .group ul {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    padding-right: 50px;
+}
+
+.navbar .group ul li {
+    list-style: none;
+}
+
+.navbar .group ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    font-weight: 800;
+    position: relative;
+    letter-spacing: 2px;
+}
+
+.navbar .group ul li a:hover {
+    color: #c01e2e;
+}
+
+.navbar .group ul li a::before {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background-color: #c01e2e;
+    border-radius: 150px;
+    transform: scaleX(0);
+    transition: transform .5s ease-in-out;
+    transform-origin: right;
+}
+
+.navbar .group ul li a:hover::before {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+.navbar.nav-sticky {
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .3);
+    transition: .5s ease-in-out;
+}
+
+/* *****************************
+*******Audit section****************
+***************************** */
+#audit {
+    width: 100%;
+    padding-top: 40px; 
+}
+
+#audit .auditcontainer {
+    width: 60%;
+    height: fit-content ;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#audit #about {
+    display: flex;
+    height: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#audit #about .text {
+    width: 50%;
+}
+
+#audit #about .text .abouttag {
+    font-size: 29px;
+    font-weight: 900;
+    color: black;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding: 20px 0;
+}
+
+#audit #about .text .aboutdesc {
+    font-size: 16px;
+    text-align: justify;
+    line-height: 32px;
+    padding: 10px 15px 10px 5px;
+    color: rgb(104, 100, 100);
+    word-spacing: 3px;
+}
+#audit #about .dtbox {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#audit #about .dtbox .box {
+    width: 100%;
+    height: 30%;
+    margin: 15px 0;
+}
+
+
+#audit #about .dtbox .box .title {
+    font-size: 20px;
+    font-weight: 800;
+}
+
+#audit #about .dtbox .box .para {
+    font-size: 15px;
+    text-align: justify;
+    padding: 10px 0;
+}
+
+#audit #detail {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#audit #detail .dtimg img {
+    width: 1132px;
+    height: 200px;
+}
+
+#audit #form {
+    width: 100%;
+}
+#audit #form form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 50px;
+    background-color: transparent;
+}
+
+#audit #form form > p {
+    color: #3f5a6d;
+    border-color: #a5c3d6;
+    background-color: #cadfec;
+    border-radius: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    height: 60px;
+    margin-bottom: 21.7391px;
+    outline-color: rgb(68, 96, 116);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 20px;
+    letter-spacing: 1px;
+    word-spacing: 4px;
+    cursor: pointer;
+}
+
+#audit #form form > p i {
+    color: rgb(18, 56, 114);
+    font-size: 22px;
+    padding-right: 2px;
+}
+
+
+#audit #form form label {
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    color: black;
+    text-shadow: 0 0 5px white;
+    text-transform: capitalize;
+    margin-bottom: 5px;
+}
+
+#audit #form form input {
+    font-size: 18px;
+    padding: 12px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 2px solid rgb(131, 129, 129);
+    outline-color: rgb(119, 118, 118);
+    color: rgb(119, 118, 118);
+    background-color: transparent;
+}
+
+#audit #form form textarea {
+    min-height: 200px;
+    height: 200px;
+    max-height: 200px;
+    min-width: 100%;
+    width: 100%;
+    max-width: 100%;
+    border-radius: 5px;
+    border: 2px solid rgb(131, 129, 129);
+    outline-color: rgb(119, 118, 118);
+    color: rgb(119, 118, 118);
+    background-color: transparent;
+    padding: 15px;
+    font-size: 20px;
+}
+
+#audit #form form input[type=submit] {
+    width: 150px;
+    font-size: 18px;
+    color: white;
+    background-color: #701d2c;
+    border: 1px solid #701d2c;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-radius: 25px;
+    transition: all .4s ease;
+    cursor: pointer;
+}
+
+#audit #form form input[type=submit]:hover {
+    background-color: black;
+    color: white;
+    letter-spacing: 3px;
+}
+
+
+/* *****************************
+*******footer****************
+***************************** */
+footer {
+    width: 100vw;
+    height: 7vh;
+}
+
+footer .footer-content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    color: white;
+    background-color: black;
+}
+ 
+footer .footer-content .logo {
+    width: 33.33%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+footer .footer-content .logo .img {
+    width: 55px;
+    height: 55px;
+}
+
+footer .footer-content .logo .img img {
+    width: 55px;
+    height: 55px;
+    cursor: pointer;
+}
+
+footer .footer-content .logo .logo-txt{
+    font-size: 22px;
+    letter-spacing: 2px;
+    word-spacing: 4px;
+    font-weight: 800;
+    cursor: pointer;
+}
+
+footer .footer-content .copyright-text {
+    width: 33.33%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    word-spacing: 1px;
+}
+
+footer .footer-content .follow-links {
+    width: 33.33%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100%;
+    padding-right: 20px;
+}
+
+footer .footer-content .follow-links i {
+    font-size: 22px;
+    padding: 0 10px;
+    cursor: pointer;
+    transition: .5s ease;
+}
+
+footer .footer-content .follow-links i:hover {
+    color: #c01e2e;
+}
