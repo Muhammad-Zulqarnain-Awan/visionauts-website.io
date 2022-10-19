@@ -6,7 +6,7 @@
 $(document).ready(function () {
     $(".hero").owlCarousel({
         items: 1,
-        loop: false,
+        loop: true,
         nav: true,
         dots: false,
         autoplay: true,
@@ -17,7 +17,7 @@ $(document).ready(function () {
 
     $(".testimonial-boxes").owlCarousel({
         items: 1,
-        loop: false,
+        loop: true,
         autoplay: true,
         autoplaySpeed: 2000,
         smartSpeed: 2500,
@@ -38,3 +38,15 @@ $(window).scroll(function () {
         $('.navbar').removeClass('nav-sticky');
     };
 });
+
+
+
+// alertbox 
+function alertbox() {
+    window.alert('Thank you for contacting us!');
+};
+
+// reset 
+function reset() {
+    document.getElementById('mc-embedded-subscribe-form').reset();
+};

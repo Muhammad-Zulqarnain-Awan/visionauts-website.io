@@ -378,6 +378,7 @@ footer .footer-content .copyright-text {
     font-weight: 800;
     letter-spacing: 1px;
     word-spacing: 1px;
+    cursor: pointer;
 }
 
 footer .footer-content .follow-links {

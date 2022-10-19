@@ -46,6 +46,7 @@ body {
     border-left: 1px solid #fff;
     border-right: 1px solid #fff;
     color: #fff;
+    letter-spacing: 2px;
 }
 
 .topbar .col .text p {
@@ -53,6 +54,7 @@ body {
     font-weight: bold;
     padding: 10px;
     color: #fff;
+    letter-spacing: 2px;
 }
 
 .topbar .col .text i {
@@ -233,12 +235,15 @@ header {
     font-size: 15px;
     text-align: justify;
     padding: 10px 0;
+    color: rgb(104, 100, 100);
+    line-height: 22px;
 }
 
 #audit #detail {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-top: 25px;
 }
 
 #audit #detail .dtimg img {
@@ -323,8 +328,8 @@ header {
 }
 
 #audit #form form input[type=submit] {
-    width: 150px;
-    font-size: 18px;
+    width: 130px;
+    font-size: 16px;
     color: white;
     background-color: #701d2c;
     border: 1px solid #701d2c;
@@ -396,6 +401,7 @@ footer .footer-content .copyright-text {
     font-weight: 800;
     letter-spacing: 1px;
     word-spacing: 1px;
+    cursor: pointer;
 }
 
 footer .footer-content .follow-links {
