@@ -328,16 +328,19 @@ header #hero .owl-carousel {
 }
 
 #hero .owl-carousel .slide .sl .btns button:first-child {
-    background-color: #c01e2e;
+    background-color: #212121;
+    border: 1px solid transparent;
 }
 
 #hero .owl-carousel .slide .sl .btns button:first-child:hover {
     background-color: transparent;
     color: #fff;
+    border: 1px solid #fff;
 }
 
 #hero .owl-carousel .slide .sl .btns button:last-child:hover {
-    background-color: #c01e2e;
+    background-color: #212121;
+    border: 1px solid transparent;
 }
 
 
